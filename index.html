@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre o IMC</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="conjunt">
+        <a class="home-page" href="./calculadora.html" target="_self">
+          <img
+            id="logo-img"
+            src="./Mídias/kisspng-health-food-logo-diet-eating-trademark-logo-5ada33a2417576.0506005715242495062681-removebg-preview.png"
+          />
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="menu" id="menu" role="menu">
+          <a class="anchor" href="./calculadora.html" target="_self">
+            <li>Calculadora</li>
+          </a>
+        </ul>
+      </nav>
+      <div class="contato">
+        <a
+          class="icon insta"
+          href="https://www.instagram.com/guscobernatti_/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          class="icon yt"
+          href="https://www.youtube.com/channel/UCJm5qpeveW1t3HwJUPlq6bA"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a class="icon zap" href="https://web.whatsapp.com/">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <div class="hamburguer">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <a class="anchor" href="./calculadora.html" target="_self">
+              <li>Calculadora</li>
+            </a>
+          </div>
+        </div>
+
+        <button class="nav-button" onclick="openNav()">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+      </div>
+    </header>
+
+    <nav class="scroll">
+      <ul class="smoth-scroll">
+        <li>
+          <a href="#sobre">Sobre IMC</a>
+        </li>
+        <li>
+          <a href="#oque">O que é</a>
+        </li>
+        <li>
+          <a href="#comocalc">Como calcular</a>
+        </li>
+        <li>
+          <a href="#importancia">Importância</a>
+        </li>
+        <li>
+          <a href="#footer">Reservações</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section class="first-part" id="sobre">
+        <section class="img1">
+          <img id="img" src="./Mídias/22249.jpg" />
+        </section>
+        <div class="details">
+          <h1 class="t1">Calculadora de IMC (e peso ideal)</h1>
+          <p class="p1">
+            A classificação do índice de massa corporal (IMC) pode ajudar a
+            identificar problemas de obesidade ou desnutrição, em crianças,
+            adolescentes, adultos e idosos. Além de calcular o valor de IMC,
+            esta calculadora também indica qual o intervalo de peso ideal que
+            deve ter para garantir uma melhor qualidade de vida. Ter um peso
+            dentro do intervalo de peso ideal ajuda ainda a evitar o
+            aparecimento de várias doenças crônicas, como diabetes e
+            hipertensão.
+          </p>
+        </div>
+      </section>
+
+      <section class="second-part" id="oque">
+        <section class="img2">
+          <img
+            id="secimg"
+            src="./Mídias/ilustracao-divertida-em-3d-de-um-medico-indiano.jpg"
+          />
+        </section>
+        <div class="details">
+          <h1 class="t2">O que é IMC?</h1>
+          <p class="p2">
+            IMC é a sigla de Índice de Massa Corporal, um parâmetro que é
+            utilizado para avaliar se o peso está dentro do valor ideal para a
+            altura. Isso significa que, a partir do resultado do IMC é possível
+            saber se a pessoa está acima ou abaixo do peso recomendado e também
+            diagnosticar problemas de saúde como obesidade ou desnutrição. O IMC
+            pode ser utilizado em crianças, adolescentes, adultos ou idosos.
+          </p>
+        </div>
+      </section>
+
+      <section class="third-part" id="comocalc">
+        <section class="img3">
+          <img id="terimg" src="./Mídias/Design sem nome.png" />
+        </section>
+        <div class="details">
+          <h1 class="t3">Como calcular o IMC?</h1>
+          <p class="p2">
+            O IMC é calculado dividindo o peso (em kg) pela altura ao quadrado
+            (em m), de acordo com a seguinte fórmula:
+            <b>IMC = peso / (altura x altura)</b>. O resultado de IMC é dado em
+            kg/m2.
+          </p>
+        </div>
+      </section>
+
+      <section class="fourth-part" id="importancia">
+        <section class="img4">
+          <img
+            id="tetraimg"
+            src="./Mídias/_104620701_prmo_imc_br-nc-removebg-preview.png"
+          />
+        </section>
+        <div class="details">
+          <h1 class="t4">Por que é importante saber o IMC?</h1>
+          <p class="p4">
+            Saber o IMC é importante para verificar se o peso está de acordo com
+            a altura da pessoa, além de ser importante para saber se existe
+            risco de desenvolver alguma doença. No caso das crianças, o IMC é
+            importante para saber se o desenvolvimento está de acordo com o
+            esperado. Além disso, sabendo o IMC, é possível também verificar
+            qual o peso ideal e, assim, saber se a pessoa está acima ou abaixo
+            do peso recomendado para a sua altura.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <section class="foot">
+        <div class="logo-foot">
+          <img
+            id="logo-img"
+            src="./Mídias/kisspng-health-food-logo-diet-eating-trademark-logo-5ada33a2417576.0506005715242495062681-removebg-preview.png"
+          />
+        </div>
+
+        <div class="obs">
+          <span class="direitos">Todos os direitos reservados ©</span>
+          <span class="name"
+            >Desenvolvido por
+            <a
+              href="https://www.linkedin.com/in/gustavo-luiz-scobernatti-de-almeida-21597326b/"
+              target="_blank"
+              class="linkToLinkedin"
+            >
+              Gustavo Luiz
+            </a>
+          </span>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2? family= Belanosima:wght@400;600 & family= Raleway:wght@200 & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Belanosima:wght@400;600 & family= Caprasimo & family= Lilita+One & family= Luckiest+Guy & family= Permanent+ Marker & family= Raleway:wght@200 & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&family=Caprasimo&family=Luckiest+Guy&family=Permanent+Marker&family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Belanosima:wght@400;600&family=Caprasimo&family=Lilita+One&family=Luckiest+Guy&family=Permanent+Marker&family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #00004d;
+  color: white;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.conjunt {
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.conjunt .home-page {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.home-page {
+  display: flex;
+  align-items: center;
+}
+
+#logo-img {
+  height: 70px;
+  width: auto;
+}
+
+.menu {
+  display: flex;
+  text-align: center;
+  gap: 50px;
+  font-size: 20px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.menu .anchor {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+li {
+  font-size: 25px;
+  color: #fff;
+  position: relative;
+  transition: 0.5s;
+}
+
+li:hover {
+  color: #99bbff;
+}
+
+.contato {
+  display: flex;
+  padding-right: 60px;
+  column-gap: 13px;
+}
+
+.icon {
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+  transition: 0.5s;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  align-items: center;
+  justify-content: center;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  outline-offset: 4px;
+}
+
+.icon:hover i {
+  animation: shake 0.25s;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+.insta {
+  transition: 0.5s;
+}
+
+.insta:hover {
+  background-image: linear-gradient(45deg, #feda77, #d62976, #962fbf, #4f5bd5);
+}
+
+.yt {
+  transition: 0.5s;
+}
+
+.yt:hover {
+  background-color: #c4302b;
+}
+
+.zap {
+  transition: 0.5s;
+}
+
+.zap:hover {
+  background-color: #25d366;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+  font-family: "Poppins", sans-serif;
+}
+
+.calculadora {
+  background-color: #00004d;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.calc-form {
+  padding: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#title {
+  font-size: 30px;
+  color: #fff;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  color: #fff;
+}
+
+.input-field span,
+.input-field i {
+  font-size: 15px;
+  padding: 0.6rem 1rem;
+}
+
+.input-field {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input-field input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+#calculate {
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #009933;
+  color: #fff;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+.table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+tr {
+  border: 1px solid #00004d;
+}
+
+tr,
+td {
+  padding: 20px;
+}
+
+.row1 {
+  font-style: italic;
+  font-size: 17px;
+  color: #00004d;
+}
+
+.imagem {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#img {
+  height: 500px;
+}
+
+#bmi {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-top: 1px solid greenyellow;
+  padding: 30px;
+  color: #fff;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+}
+
+#result span:first-child {
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  background-color: #00004d;
+  height: 250px;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 250px;
+}
+
+#logo-img {
+  height: 75px;
+}
+
+.obs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  color: #fff;
+}
+
+.direitos {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.nav-button {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: #00004d;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.nav-button .fa-2x {
+  color: #fff;
+}
+
+.hamburguer {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .calculadora {
+    width: 50%;
+  }
+}
+
+@media (max-width: 795px) {
+  #img {
+    height: 400px;
+  }
+
+  .calculadora {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato {
+    display: none;
+  }
+
+  .conjunt {
+    padding-left: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .nav-button {
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #00004d;
+    margin: 8px;
+    cursor: pointer;
+  }
+
+  .nav-button .fa-2x {
+    color: #fff;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 0;
+    background-color: #00004d;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+  }
+
+  #myNav {
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .anchor li {
+    font-size: 50px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .closebtn {
+    position: absolute;
+    right: 0;
+    padding: 8px;
+    margin: 8px;
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .menu-foot {
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    font-size: 20px;
+    font-family: "Luckiest Guy", cursive;
+  }
+}
+
+@media (max-width: 570px) {
+  .calculadora {
+    width: 80%;
+  }
+
+  .contato {
+    display: none;
+  }
+
+  .conjunt {
+    padding-left: 20px;
+  }
+
+  .menu {
+    padding-right: 30%;
+  }
+
+  #img {
+    height: 300px;
+  }
+
+  .tabela {
+    display: flex;
+    justify-content: center;
+  }
+
+  .table {
+    width: 90%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .nav-button {
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #00004d;
+    margin: 8px;
+    cursor: pointer;
+  }
+
+  .nav-button .fa-2x {
+    color: #fff;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 0;
+    background-color: #00004d;
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .closebtn {
+    position: absolute;
+    right: 0;
+    padding: 8px;
+    margin: 8px;
+    font-size: 50px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 500px) {
+  .calculadora {
+    width: 90%;
+  }
+}
+
+@media (max-width: 440px) {
+  .calculadora {
+    width: 95%;
+  }
+
+  #img {
+    height: 200px;
+  }
+
+  .menu-foot {
+    display: flex;
+    text-align: center;
+    gap: 50px;
+    font-size: 20px;
+    font-family: "Luckiest Guy", cursive;
+  }
+
+  header {
+    justify-content: center;
+    width: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .table {
+    display: none;
+  }
+}
+
+.linkToLinkedin {
+  text-decoration: none;
+  color: #8f8fe3;
+  transition: 0.2s;
+}
+
+.linkToLinkedin:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./stylescalc.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="conjunt">
+        <a class="home-page" href="./index.html" target="_self">
+          <img
+            id="logo-img"
+            src="./Mídias/kisspng-health-food-logo-diet-eating-trademark-logo-5ada33a2417576.0506005715242495062681-removebg-preview.png"
+          />
+        </a>
+      </div>
+      <ul class="menu">
+        <a class="anchor" href="./index.html" target="_self">
+          <li>Home</li>
+        </a>
+      </ul>
+      <div class="contato">
+        <a
+          class="icon insta"
+          href="https://www.instagram.com/guscobernatti_/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          class="icon yt"
+          href="https://www.youtube.com/channel/UCJm5qpeveW1t3HwJUPlq6bA"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a class="icon zap" href="https://web.whatsapp.com/">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <div class="hamburguer">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="overlay-content">
+            <a class="anchor" href="./index.html" target="_self">
+              <li>Home</li>
+            </a>
+          </div>
+        </div>
+
+        <button class="nav-button" onclick="openNav()">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="imagem">
+      <img id="img" src="./Mídias/undraw_personal_training_0dqn.svg" />
+    </div>
+
+    <main class="container">
+      <section class="calculadora">
+        <div class="calc-form">
+          <form class="form">
+            <h1 id="title">Calculadora IMC</h1>
+            <div class="input-box">
+              <label for="weight">Peso em KG</label>
+              <div class="input-field">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <input id="weight" type="number" name="peso" />
+                <span>Kg</span>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label for="height">Altura em metros</label>
+              <div class="input-field">
+                <i class="fa-solid fa-ruler"></i>
+                <input id="height" type="number" name="altura" />
+                <span>m</span>
+              </div>
+            </div>
+
+            <button id="calculate">Calcular</button>
+          </form>
+        </div>
+
+        <div id="info" class="hidden">
+          <div id="bmi">
+            <div id="result">
+              <span>Seu imc é</span>
+              <span id="value"></span>
+            </div>
+            <div id="description">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tabela">
+        <table class="table">
+          <tr class="row1">
+            <td>IMC</td>
+            <td>CLASSIFICAÇÃO</td>
+            <td>OBESIDADE (grau)</td>
+          </tr>
+
+          <tr>
+            <td>Menor que 18,5</td>
+            <td>Magreza</td>
+            <td>0</td>
+          </tr>
+
+          <tr>
+            <td>18,5 a 24,9</td>
+            <td>Normal</td>
+            <td>0</td>
+          </tr>
+
+          <tr>
+            <td>25 a 29,9</td>
+            <td>Sobrepeso</td>
+            <td>I</td>
+          </tr>
+
+          <tr>
+            <td>30,0 a 39,9</td>
+            <td>Obesidade</td>
+            <td>II</td>
+          </tr>
+
+          <tr>
+            <td>Maior que 40,0</td>
+            <td>Obesidade Grave</td>
+            <td>III</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <section class="foot">
+        <div class="logo-foot">
+          <img
+            id="logo-img"
+            src="./Mídias/kisspng-health-food-logo-diet-eating-trademark-logo-5ada33a2417576.0506005715242495062681-removebg-preview.png"
+          />
+        </div>
+
+        <div class="obs">
+          <span class="direitos">Todos os direitos reservados ©</span>
+          <span class="name"
+            >Desenvolvido por
+            <a
+              href="https://www.linkedin.com/in/gustavo-luiz-scobernatti-de-almeida-21597326b/"
+              target="_blank"
+              class="linkToLinkedin"
+            >
+              Gustavo Luiz
+            </a></span
+          >
+        </div>
+      </section>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
